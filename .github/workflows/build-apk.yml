@@ -25,6 +25,9 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Generate Android platform files
+        run: flutter create . --platforms=android --project-name=tabtoub_fly --org com.tabtoub
+
       - name: Install dependencies
         run: flutter pub get
 
